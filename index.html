@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="HMA DESIGNS — premium graphic design, brand identity and creative digital solutions. Your Premium Design Partner.">
+  <title>HMA DESIGNS | Your Premium Design Partner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#11100e;--panel:#191815;--gold:#d6b36a;--gold2:#f0d99e;--text:#f6f2e9;--muted:#aaa49a;--line:rgba(214,179,106,.2);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    header{position:sticky;top:0;z-index:20;background:rgba(17,16,14,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:3px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:21px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:-4px}.navlinks{display:flex;gap:30px;color:#d4cec3;font-size:13px}.navlinks a:hover{color:var(--gold2)}.nav-cta,.button{border:1px solid var(--gold);padding:11px 19px;color:var(--gold2);font-size:12px;letter-spacing:1px;text-transform:uppercase;transition:.25s}.nav-cta:hover,.button:hover{background:var(--gold);color:#17130b}
+    .hero{min-height:650px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 80% 45%,rgba(180,137,62,.13),transparent 40%),linear-gradient(120deg,#11100e 35%,#1a1711)}
+    .hero:after{content:"HMA";position:absolute;right:-20px;bottom:-115px;font-family:var(--serif);font-size:clamp(240px,36vw,510px);line-height:1;color:rgba(214,179,106,.035);pointer-events:none}
+    .hero-content{max-width:720px;padding:95px 0;position:relative;z-index:1}.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:600}.hero h1{font:600 clamp(48px,7vw,88px)/1.06 var(--serif);margin:22px 0}.hero h1 span{color:var(--gold2);font-style:italic}.hero p{max-width:570px;color:var(--muted);font-size:16px;margin:0 0 32px}.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.button.primary{background:var(--gold);color:#17130b}.button.secondary{border-color:rgba(255,255,255,.22);color:var(--text)}.scroll-note{margin-top:70px;color:#716b61;font-size:10px;letter-spacing:3px;text-transform:uppercase}
+    section{padding:100px 0}.section-head{max-width:650px;margin-bottom:48px}.section-head .eyebrow{margin-bottom:13px}.section-head h2{font:600 clamp(34px,4.5vw,54px)/1.15 var(--serif);margin:0 0 16px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-card{min-height:330px;border:1px solid var(--line);background:linear-gradient(145deg,#201c14,#141310);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px;position:relative}.about-card:before,.about-card:after{content:"";position:absolute;width:55px;height:55px;border-color:var(--gold);opacity:.7}.about-card:before{top:18px;left:18px;border-top:1px solid;border-left:1px solid}.about-card:after{bottom:18px;right:18px;border-bottom:1px solid;border-right:1px solid}.monogram{font:600 100px/.9 var(--serif);color:var(--gold);letter-spacing:-10px}.monogram-caption{font-size:10px;letter-spacing:5px;color:var(--muted);margin-top:20px}.about-copy h3{font:600 30px var(--serif);margin:0 0 14px}.about-copy p{color:var(--muted)}.signature{color:var(--gold2);font-family:var(--serif);font-size:20px;margin-top:24px}
+    .services{background:#151411;border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{border:1px solid rgba(214,179,106,.16);padding:30px 26px;min-height:205px;background:rgba(255,255,255,.012);transition:.25s}.service:hover{transform:translateY(-5px);border-color:var(--gold)}.service-number{color:var(--gold);font:20px var(--serif)}.service h3{font:600 21px var(--serif);margin:22px 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work{min-height:245px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);background:linear-gradient(145deg,#272116,#171511)}.work:nth-child(2){background:linear-gradient(145deg,#242424,#171511)}.work:nth-child(3){background:linear-gradient(145deg,#292014,#171511)}.work-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}.work h3{font:600 26px var(--serif);margin:0}.work p{font-size:12px;color:var(--muted);margin:0}.portfolio-note{color:#8d867b;font-size:12px;margin-top:18px}
+    .contact{background:radial-gradient(ellipse at 50% 100%,rgba(180,137,62,.12),transparent 55%),#171511;text-align:center;border-top:1px solid var(--line)}.contact .section-head{margin:0 auto 30px}.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.contact-note{font-size:12px;color:var(--muted);margin-top:28px}
+    footer{padding:25px 0;border-top:1px solid rgba(255,255,255,.07);color:#827b70;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.gold{color:var(--gold2)}
+    @media(max-width:760px){nav{height:70px}.navlinks{display:none}.hero{min-height:570px}.hero-content{padding:75px 0}.about-grid{grid-template-columns:1fr;gap:35px}.about-card{min-height:260px}.service-grid,.portfolio-grid{grid-template-columns:1fr 1fr}section{padding:75px 0}}
+    @media(max-width:480px){.wrap{width:min(100% - 32px,1160px)}.service-grid,.portfolio-grid{grid-template-columns:1fr}.service{min-height:175px}.hero h1{font-size:49px}.hero p{font-size:14px}.footer-inner{display:block}.footer-inner span{display:block;margin:5px 0}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap"><nav aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">H</span><span>HMA DESIGNS<small>CREATIVE STUDIO</small></span></a>
+      <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#contact">Contact</a></div>
+      <a class="nav-cta" href="#contact">Let's Talk</a>
+    </nav></div>
+  </header>
+  <main>
+    <section class="hero" id="home"><div class="wrap"><div class="hero-content">
+      <div class="eyebrow">Design • Identity • Creativity</div>
+      <h1>Where Luxury<br>Meets <span>Creativity.</span></h1>
+      <p>We build distinctive visual identities and thoughtful designs that help ambitious brands make a lasting impression.</p>
+      <div class="hero-actions"><a class="button primary" href="#contact">Start a Project</a><a class="button secondary" href="#services">Explore Services</a></div>
+      <div class="scroll-note">Independent creative studio · Lahore, Pakistan</div>
+    </div></div></section>
+    <section id="about"><div class="wrap about-grid">
+      <div class="about-card"><div><div class="monogram">HMA</div><div class="monogram-caption">YOUR PREMIUM DESIGN PARTNER</div></div></div>
+      <div class="about-copy"><div class="eyebrow">A little about us</div><h3>Design with purpose.<br><span class="gold">Identity with impact.</span></h3>
+        <p>HMA DESIGNS is a creative design studio focused on building clear, memorable and premium-looking brand experiences. From the first idea to the final visual, every detail is shaped with care.</p>
+        <p>Led by Hafiz Mohammed Afaq, Graphic Designer &amp; Brand Identity Specialist, based in Lahore, Pakistan.</p>
+        <div class="signature">Your Premium Design Partner.</div>
+      </div>
+    </div></section>
+    <section class="services" id="services"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we do</div><h2>Creative services,<br>crafted to stand out.</h2><p>Practical design solutions for businesses, creators and growing brands.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="service-number">01 / Identity</div><h3>Logo &amp; Branding</h3><p>Distinctive logos, brand marks, visual systems and identity guidelines.</p></article>
+        <article class="service"><div class="service-number">02 / Digital</div><h3>Social Media Design</h3><p>Professional posts, stories, banners and campaign creatives.</p></article>
+        <article class="service"><div class="service-number">03 / Print</div><h3>Business Stationery</h3><p>Business cards, letterheads, flyers, brochures and print materials.</p></article>
+        <article class="service"><div class="service-number">04 / Marketing</div><h3>Posters &amp; Advertising</h3><p>Promotional graphics designed to communicate clearly and attract attention.</p></article>
+        <article class="service"><div class="service-number">05 / Creator</div><h3>YouTube &amp; Thumbnails</h3><p>Channel graphics, video thumbnails and digital creator assets.</p></article>
+        <article class="service"><div class="service-number">06 / Creative</div><h3>AI Content &amp; Design</h3><p>Creative visuals, content concepts and AI-assisted digital solutions.</p></article>
+      </div>
+    </div></section>
+    <section id="work"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Selected capabilities</div><h2>Good design makes<br>the difference.</h2><p>A glimpse at the kinds of projects we create. A full portfolio gallery will be added as approved project samples are supplied.</p></div>
+      <div class="portfolio-grid">
+        <article class="work"><span class="work-label">Brand identity</span><h3>Built to be<br>recognised.</h3><p>Logo systems · Brand direction</p></article>
+        <article class="work"><span class="work-label">Digital presence</span><h3>Made to<br>connect.</h3><p>Social graphics · Campaign design</p></article>
+        <article class="work"><span class="work-label">Print &amp; marketing</span><h3>Details that<br>stay with you.</h3><p>Stationery · Promotional design</p></article>
+      </div>
+      <p class="portfolio-note">These are service-category showcases, not client-project claims. Real work samples can replace them when provided.</p>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap">
+      <div class="section-head"><div class="eyebrow">Have a project in mind?</div><h2>Let's create something<br><span class="gold">remarkable.</span></h2><p>Tell us what you're building. Let's turn your idea into a visual identity that feels unmistakably yours.</p></div>
+      <div class="contact-links"><a class="button primary" href="https://www.linkedin.com/in/hafiz-muhammad-afaq-400a34414/" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="button secondary" href="https://github.com/hafizsaab-kaka125hung" target="_blank" rel="noopener">GitHub Profile</a></div>
+      <div class="contact-note">Lahore, Pakistan · Available for design projects</div>
+    </div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> HMA DESIGNS. All rights reserved.</span><span>Designed with care · <span class="gold">Where Luxury Meets Creativity</span></span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

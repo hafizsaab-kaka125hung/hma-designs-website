@@ -1,84 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#11100e">
-  <meta name="description" content="HMA DESIGNS — premium graphic design, brand identity and creative digital solutions. Your Premium Design Partner.">
-  <title>HMA DESIGNS | Your Premium Design Partner</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#11100e;--panel:#191815;--gold:#d6b36a;--gold2:#f0d99e;--text:#f6f2e9;--muted:#aaa49a;--line:rgba(214,179,106,.2);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
-    .topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-    header{position:sticky;top:0;z-index:20;background:rgba(17,16,14,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
-    nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:3px}.brand-mark{width:42px;height:42px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:21px}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:3px;margin-top:-4px}.navlinks{display:flex;gap:30px;color:#d4cec3;font-size:13px}.navlinks a:hover{color:var(--gold2)}.nav-cta,.button{border:1px solid var(--gold);padding:11px 19px;color:var(--gold2);font-size:12px;letter-spacing:1px;text-transform:uppercase;transition:.25s}.nav-cta:hover,.button:hover{background:var(--gold);color:#17130b}
-    .hero{min-height:650px;display:grid;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 80% 45%,rgba(180,137,62,.13),transparent 40%),linear-gradient(120deg,#11100e 35%,#1a1711)}
-    .hero:after{content:"HMA";position:absolute;right:-20px;bottom:-115px;font-family:var(--serif);font-size:clamp(240px,36vw,510px);line-height:1;color:rgba(214,179,106,.035);pointer-events:none}
-    .hero-content{max-width:720px;padding:95px 0;position:relative;z-index:1}.eyebrow{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:600}.hero h1{font:600 clamp(48px,7vw,88px)/1.06 var(--serif);margin:22px 0}.hero h1 span{color:var(--gold2);font-style:italic}.hero p{max-width:570px;color:var(--muted);font-size:16px;margin:0 0 32px}.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.button.primary{background:var(--gold);color:#17130b}.button.secondary{border-color:rgba(255,255,255,.22);color:var(--text)}.scroll-note{margin-top:70px;color:#716b61;font-size:10px;letter-spacing:3px;text-transform:uppercase}
-    section{padding:100px 0}.section-head{max-width:650px;margin-bottom:48px}.section-head .eyebrow{margin-bottom:13px}.section-head h2{font:600 clamp(34px,4.5vw,54px)/1.15 var(--serif);margin:0 0 16px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.about-card{min-height:330px;border:1px solid var(--line);background:linear-gradient(145deg,#201c14,#141310);display:flex;align-items:center;justify-content:center;text-align:center;padding:35px;position:relative}.about-card:before,.about-card:after{content:"";position:absolute;width:55px;height:55px;border-color:var(--gold);opacity:.7}.about-card:before{top:18px;left:18px;border-top:1px solid;border-left:1px solid}.about-card:after{bottom:18px;right:18px;border-bottom:1px solid;border-right:1px solid}.monogram{font:600 100px/.9 var(--serif);color:var(--gold);letter-spacing:-10px}.monogram-caption{font-size:10px;letter-spacing:5px;color:var(--muted);margin-top:20px}.about-copy h3{font:600 30px var(--serif);margin:0 0 14px}.about-copy p{color:var(--muted)}.signature{color:var(--gold2);font-family:var(--serif);font-size:20px;margin-top:24px}
-    .services{background:#151411;border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{border:1px solid rgba(214,179,106,.16);padding:30px 26px;min-height:205px;background:rgba(255,255,255,.012);transition:.25s}.service:hover{transform:translateY(-5px);border-color:var(--gold)}.service-number{color:var(--gold);font:20px var(--serif)}.service h3{font:600 21px var(--serif);margin:22px 0 8px}.service p{font-size:13px;color:var(--muted);margin:0}
-    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.work{min-height:245px;padding:25px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);background:linear-gradient(145deg,#272116,#171511)}.work:nth-child(2){background:linear-gradient(145deg,#242424,#171511)}.work:nth-child(3){background:linear-gradient(145deg,#292014,#171511)}.work-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}.work h3{font:600 26px var(--serif);margin:0}.work p{font-size:12px;color:var(--muted);margin:0}.portfolio-note{color:#8d867b;font-size:12px;margin-top:18px}
-    .contact{background:radial-gradient(ellipse at 50% 100%,rgba(180,137,62,.12),transparent 55%),#171511;text-align:center;border-top:1px solid var(--line)}.contact .section-head{margin:0 auto 30px}.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.contact-note{font-size:12px;color:var(--muted);margin-top:28px}
-    footer{padding:25px 0;border-top:1px solid rgba(255,255,255,.07);color:#827b70;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.gold{color:var(--gold2)}
-    @media(max-width:760px){nav{height:70px}.navlinks{display:none}.hero{min-height:570px}.hero-content{padding:75px 0}.about-grid{grid-template-columns:1fr;gap:35px}.about-card{min-height:260px}.service-grid,.portfolio-grid{grid-template-columns:1fr 1fr}section{padding:75px 0}}
-    @media(max-width:480px){.wrap{width:min(100% - 32px,1160px)}.service-grid,.portfolio-grid{grid-template-columns:1fr}.service{min-height:175px}.hero h1{font-size:49px}.hero p{font-size:14px}.footer-inner{display:block}.footer-inner span{display:block;margin:5px 0}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="HMA Designs is a Lahore-based creative studio specializing in premium brand identity, graphic design, social media creatives and digital content.">
+<meta property="og:title" content="HMA Designs — Where Luxury Meets Creativity"><meta property="og:description" content="Premium graphic design and brand identity for businesses and creators."><meta property="og:type" content="website">
+<title>HMA Designs — Premium Graphic Design & Brand Identity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--surface:#121212;--surface2:#181715;--gold:#c9a45c;--gold-light:#f0d9a4;--white:#f7f5ef;--muted:#aaa69d;--line:rgba(201,164,92,.22);--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif;--serif:'Playfair Display',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--white);font-family:var(--sans);line-height:1.65}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1160px,calc(100% - 48px));margin:auto}.gold{color:var(--gold-light)}.kicker{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase}.top-line{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+header{position:sticky;top:0;z-index:50;background:rgba(11,11,11,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px}.brand-icon{width:43px;height:43px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold-light);font:700 21px var(--serif);position:relative}.brand-icon:after{content:"";position:absolute;inset:4px;border:1px solid rgba(201,164,92,.28)}.brand-name{font:800 14px var(--display);letter-spacing:3px}.brand-sub{font-size:8px;letter-spacing:3.2px;color:#aaa;display:block;margin-top:1px}.nav-links{display:flex;align-items:center;gap:30px;font-size:13px;color:#d1cec7}.nav-links a{transition:color .2s}.nav-links a:hover{color:var(--gold-light)}.nav-action,.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 21px;border:1px solid var(--gold);color:var(--gold-light);font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;transition:.25s}.nav-action:hover,.btn-outline:hover{background:var(--gold);color:#111}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:white;padding:9px 12px;font-size:20px}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 75% 45%,rgba(201,164,92,.13),transparent 37%),linear-gradient(115deg,#0b0b0b 35%,#17140e)}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(201,164,92,.12);border-radius:50%;right:7%;top:50%;transform:translateY(-50%);box-shadow:0 0 0 35px rgba(201,164,92,.025),0 0 0 75px rgba(201,164,92,.018)}
+.hero:after{content:"HMA";position:absolute;right:5%;top:50%;transform:translateY(-45%);font:700 clamp(160px,25vw,350px)/1 var(--serif);color:rgba(201,164,92,.07);pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:100px 0;max-width:760px}.hero h1{font:700 clamp(48px,7vw,86px)/1.08 var(--serif);letter-spacing:-1.5px;margin:22px 0}.hero h1 em{color:var(--gold-light);font-weight:600}.hero-copy{max-width:560px;color:var(--muted);font-size:16px;margin:0 0 32px}.actions{display:flex;gap:13px;flex-wrap:wrap}.btn-fill{background:var(--gold);color:#17130b}.btn-fill:hover{background:var(--gold-light);transform:translateY(-2px)}.btn-outline{border-color:rgba(255,255,255,.24);color:var(--white)}.hero-meta{margin-top:68px;display:flex;align-items:center;gap:13px;color:#8b867c;font-size:10px;letter-spacing:2px;text-transform:uppercase}.hero-meta:before{content:"";width:36px;height:1px;background:var(--gold)}
+section{padding:105px 0}.section-title{max-width:660px;margin-bottom:48px}.section-title h2{font:700 clamp(36px,5vw,56px)/1.12 var(--serif);margin:13px 0 17px}.section-title p{color:var(--muted);margin:0;max-width:590px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:82px;align-items:center}.brand-art{height:390px;position:relative;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,#302719,#15130f 65%)}.brand-art:before,.brand-art:after{content:"";position:absolute;width:70%;height:70%;border:1px solid rgba(201,164,92,.23);transform:rotate(45deg)}.brand-art:after{width:55%;height:55%;border-color:rgba(201,164,92,.16)}.art-inner{position:relative;z-index:1;text-align:center}.art-monogram{font:700 clamp(70px,10vw,112px)/1 var(--serif);letter-spacing:-9px;color:var(--gold-light);text-shadow:0 10px 35px #000}.art-caption{font-size:9px;letter-spacing:5px;color:#b7a57f;margin-top:18px}.about-copy h3{font:700 31px/1.25 var(--serif);margin:0 0 17px}.about-copy p{color:var(--muted);font-size:14px}.about-sign{margin-top:25px;color:var(--gold-light);font:italic 21px var(--serif)}.facts{display:flex;gap:28px;margin-top:28px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1)}.fact strong{display:block;color:var(--gold-light);font:600 17px var(--display)}.fact span{color:#918b80;font-size:10px;letter-spacing:1px;text-transform:uppercase}
+.services{background:var(--surface);border-block:1px solid rgba(255,255,255,.06)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{min-height:225px;padding:28px;border:1px solid rgba(201,164,92,.15);background:linear-gradient(145deg,rgba(255,255,255,.025),rgba(255,255,255,.005));transition:.25s}.service:hover{border-color:var(--gold);transform:translateY(-5px);background:linear-gradient(145deg,rgba(201,164,92,.09),rgba(255,255,255,.01))}.service-top{display:flex;align-items:center;justify-content:space-between}.service-no{font:600 19px var(--serif);color:var(--gold)}.service-symbol{font-size:21px;color:#8b754b}.service h3{font:700 20px var(--display);margin:28px 0 9px}.service p{font-size:13px;color:var(--muted);margin:0}
+.work-section{background:#0e0e0e}.work-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:15px}.work-card{min-height:310px;position:relative;overflow:hidden;padding:25px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid rgba(201,164,92,.2);background:#17140f}.work-card:nth-child(2){background:linear-gradient(145deg,#202020,#111)}.work-card:nth-child(3){background:linear-gradient(145deg,#2a2115,#111)}.work-visual{position:absolute;inset:0;display:grid;place-items:center;opacity:.9}.visual-logo{font:700 100px var(--serif);color:rgba(226,195,132,.2);letter-spacing:-9px}.visual-social{width:150px;height:175px;border:1px solid rgba(201,164,92,.4);transform:rotate(-8deg);box-shadow:20px 20px 0 rgba(201,164,92,.08);display:grid;place-items:center;color:var(--gold-light);font:italic 26px var(--serif)}.visual-print{width:155px;height:190px;background:linear-gradient(150deg,#d0b477,#4e3c20);transform:rotate(7deg);box-shadow:0 20px 40px #000;display:grid;place-items:center;color:#19140b;font:700 26px var(--serif)}.work-info{position:relative;z-index:1}.work-tag{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light)}.work-info h3{font:700 24px var(--serif);margin:7px 0 0}.work-note{font-size:11px;color:#948d80;margin-top:18px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.process-step{border-top:1px solid var(--line);padding-top:18px}.process-step b{color:var(--gold);font:600 24px var(--serif)}.process-step h3{font:700 16px var(--display);margin:15px 0 7px}.process-step p{color:var(--muted);font-size:12px;margin:0}
+.contact{background:radial-gradient(ellipse at 50% 100%,rgba(201,164,92,.14),transparent 58%),#17140f;text-align:center;border-top:1px solid var(--line)}.contact .section-title{margin:0 auto 30px}.contact .section-title p{margin:auto}.contact-actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}.contact-small{font-size:12px;color:var(--muted);margin-top:27px}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:27px 0;color:#8e887d;font-size:11px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-brand{color:var(--gold-light);letter-spacing:2px;font-weight:700}
+@media(max-width:800px){.nav-links{gap:17px}.about-grid{gap:40px}.work-grid{grid-template-columns:1fr 1fr}.work-card:first-child{grid-column:span 2}.process-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.container{width:calc(100% - 34px)}.nav{height:72px}.menu-toggle{display:block}.nav-action{display:none}.nav-links{display:none;position:fixed;inset:72px 0 auto;background:#111;padding:24px 25px 30px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:21px;font-size:16px}.nav-links.open{display:flex}.hero{min-height:620px}.hero:before{width:320px;height:320px;right:-130px}.hero:after{right:-70px;font-size:200px}.hero-inner{padding:80px 0}.hero h1{font-size:clamp(47px,12vw,67px)}.hero-copy{font-size:14px}.hero-meta{margin-top:50px}section{padding:76px 0}.about-grid{grid-template-columns:1fr;gap:35px}.brand-art{height:290px}.service-grid{grid-template-columns:1fr 1fr}.service{padding:22px;min-height:210px}.work-grid{grid-template-columns:1fr 1fr}.work-card{min-height:250px;padding:18px}.work-card:first-child{grid-column:span 2}.visual-logo{font-size:76px}.process-grid{gap:25px 17px}}
+@media(max-width:420px){.service-grid,.work-grid,.process-grid{grid-template-columns:1fr}.work-card:first-child{grid-column:auto}.service{min-height:180px}.facts{gap:16px}.fact strong{font-size:15px}.hero-actions .btn{width:100%}.section-title h2{font-size:37px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header>
-    <div class="wrap"><nav aria-label="Main navigation">
-      <a class="brand" href="#home"><span class="brand-mark">H</span><span>HMA DESIGNS<small>CREATIVE STUDIO</small></span></a>
-      <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#contact">Contact</a></div>
-      <a class="nav-cta" href="#contact">Let's Talk</a>
-    </nav></div>
-  </header>
-  <main>
-    <section class="hero" id="home"><div class="wrap"><div class="hero-content">
-      <div class="eyebrow">Design • Identity • Creativity</div>
-      <h1>Where Luxury<br>Meets <span>Creativity.</span></h1>
-      <p>We build distinctive visual identities and thoughtful designs that help ambitious brands make a lasting impression.</p>
-      <div class="hero-actions"><a class="button primary" href="#contact">Start a Project</a><a class="button secondary" href="#services">Explore Services</a></div>
-      <div class="scroll-note">Independent creative studio · Lahore, Pakistan</div>
-    </div></div></section>
-    <section id="about"><div class="wrap about-grid">
-      <div class="about-card"><div><div class="monogram">HMA</div><div class="monogram-caption">YOUR PREMIUM DESIGN PARTNER</div></div></div>
-      <div class="about-copy"><div class="eyebrow">A little about us</div><h3>Design with purpose.<br><span class="gold">Identity with impact.</span></h3>
-        <p>HMA DESIGNS is a creative design studio focused on building clear, memorable and premium-looking brand experiences. From the first idea to the final visual, every detail is shaped with care.</p>
-        <p>Led by Hafiz Mohammed Afaq, Graphic Designer &amp; Brand Identity Specialist, based in Lahore, Pakistan.</p>
-        <div class="signature">Your Premium Design Partner.</div>
-      </div>
-    </div></section>
-    <section class="services" id="services"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">What we do</div><h2>Creative services,<br>crafted to stand out.</h2><p>Practical design solutions for businesses, creators and growing brands.</p></div>
-      <div class="service-grid">
-        <article class="service"><div class="service-number">01 / Identity</div><h3>Logo &amp; Branding</h3><p>Distinctive logos, brand marks, visual systems and identity guidelines.</p></article>
-        <article class="service"><div class="service-number">02 / Digital</div><h3>Social Media Design</h3><p>Professional posts, stories, banners and campaign creatives.</p></article>
-        <article class="service"><div class="service-number">03 / Print</div><h3>Business Stationery</h3><p>Business cards, letterheads, flyers, brochures and print materials.</p></article>
-        <article class="service"><div class="service-number">04 / Marketing</div><h3>Posters &amp; Advertising</h3><p>Promotional graphics designed to communicate clearly and attract attention.</p></article>
-        <article class="service"><div class="service-number">05 / Creator</div><h3>YouTube &amp; Thumbnails</h3><p>Channel graphics, video thumbnails and digital creator assets.</p></article>
-        <article class="service"><div class="service-number">06 / Creative</div><h3>AI Content &amp; Design</h3><p>Creative visuals, content concepts and AI-assisted digital solutions.</p></article>
-      </div>
-    </div></section>
-    <section id="work"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">Selected capabilities</div><h2>Good design makes<br>the difference.</h2><p>A glimpse at the kinds of projects we create. A full portfolio gallery will be added as approved project samples are supplied.</p></div>
-      <div class="portfolio-grid">
-        <article class="work"><span class="work-label">Brand identity</span><h3>Built to be<br>recognised.</h3><p>Logo systems · Brand direction</p></article>
-        <article class="work"><span class="work-label">Digital presence</span><h3>Made to<br>connect.</h3><p>Social graphics · Campaign design</p></article>
-        <article class="work"><span class="work-label">Print &amp; marketing</span><h3>Details that<br>stay with you.</h3><p>Stationery · Promotional design</p></article>
-      </div>
-      <p class="portfolio-note">These are service-category showcases, not client-project claims. Real work samples can replace them when provided.</p>
-    </div></section>
-    <section class="contact" id="contact"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">Have a project in mind?</div><h2>Let's create something<br><span class="gold">remarkable.</span></h2><p>Tell us what you're building. Let's turn your idea into a visual identity that feels unmistakably yours.</p></div>
-      <div class="contact-links"><a class="button primary" href="https://www.linkedin.com/in/hafiz-muhammad-afaq-400a34414/" target="_blank" rel="noopener">Connect on LinkedIn</a><a class="button secondary" href="https://github.com/hafizsaab-kaka125hung" target="_blank" rel="noopener">GitHub Profile</a></div>
-      <div class="contact-note">Lahore, Pakistan · Available for design projects</div>
-    </div></section>
-  </main>
-  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> HMA DESIGNS. All rights reserved.</span><span>Designed with care · <span class="gold">Where Luxury Meets Creativity</span></span></div></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+<div class="top-line"></div>
+<header><div class="container"><nav class="nav" aria-label="Main navigation">
+<a class="brand" href="#home" aria-label="HMA Designs home"><span class="brand-icon">H</span><span><span class="brand-name">HMA DESIGNS</span><span class="brand-sub">CREATIVE STUDIO</span></span></a>
+<div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
+<a class="nav-action" href="#contact">Start a Project ↗</a><button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-inner">
+<div class="kicker">Independent Creative Studio · Lahore, Pakistan</div>
+<h1>Make Your Brand<br>Look <em>Unforgettable.</em></h1>
+<p class="hero-copy">Thoughtful graphic design and distinctive brand identities for businesses, creators and ambitious ideas. Premium visuals, made with purpose.</p>
+<div class="actions"><a class="btn btn-fill" href="#contact">Let's Build Your Brand <span>↗</span></a><a class="btn btn-outline" href="#work">Explore Our Work</a></div>
+<div class="hero-meta">Where Luxury Meets Creativity</div>
+</div></div></section>
+<section id="about"><div class="container about-grid">
+<div class="brand-art" aria-label="HMA Designs monogram artwork"><div class="art-inner"><div class="art-monogram">HMA</div><div class="art-caption">DESIGN · IDENTITY · DETAIL</div></div></div>
+<div class="about-copy"><div class="kicker">The Studio</div><h3>Creative thinking.<br><span class="gold">Premium execution.</span></h3>
+<p>HMA DESIGNS is a graphic design and brand identity studio built around one simple idea: every brand deserves to look confident, consistent and memorable.</p>
+<p>Led by Hafiz Mohammed Afaq, Graphic Designer &amp; Brand Identity Specialist, HMA DESIGNS combines creative direction with practical design solutions for businesses and digital creators.</p>
+<div class="about-sign">Your Premium Design Partner.</div>
+<div class="facts"><div class="fact"><strong>HMA</strong><span>Personal Studio</span></div><div class="fact"><strong>Lahore</strong><span>Pakistan</span></div><div class="fact"><strong>2023—Now</strong><span>Creative Practice</span></div></div>
+</div></div></section>
+<section class="services" id="services"><div class="container">
+<div class="section-title"><div class="kicker">What We Create</div><h2>Design services for<br><span class="gold">brands with ambition.</span></h2><p>From building your identity to strengthening your digital presence, get creative support under one roof.</p></div>
+<div class="service-grid">
+<article class="service"><div class="service-top"><span class="service-no">01</span><span class="service-symbol">✳</span></div><h3>Logo &amp; Brand Identity</h3><p>Memorable logos, visual identity systems, brand colors and typography direction.</p></article>
+<article class="service"><div class="service-top"><span class="service-no">02</span><span class="service-symbol">▧</span></div><h3>Social Media Design</h3><p>Scroll-stopping posts, stories, covers and cohesive social media visuals.</p></article>
+<article class="service"><div class="service-top"><span class="service-no">03</span><span class="service-symbol">▤</span></div><h3>Business Stationery</h3><p>Business cards, letterheads, profiles and polished branded documents.</p></article>
+<article class="service"><div class="service-top"><span class="service-no">04</span><span class="service-symbol">◇</span></div><h3>Posters &amp; Marketing</h3><p>Promotional posters, flyers, brochures and advertising creatives.</p></article>
+<article class="service"><div class="service-top"><span class="service-no">05</span><span class="service-symbol">▶</span></div><h3>YouTube &amp; Digital</h3><p>Thumbnails, channel graphics, banners and creator-focused design assets.</p></article>
+<article class="service"><div class="service-top"><span class="service-no">06</span><span class="service-symbol">✧</span></div><h3>AI Creative Content</h3><p>AI-assisted visual concepts, creative content and digital storytelling assets.</p></article>
+</div></div></section>
+<section class="work-section" id="work"><div class="container">
+<div class="section-title"><div class="kicker">Creative Showcase</div><h2>Visuals that make<br>a <span class="gold">lasting impression.</span></h2><p>Our creative focus spans identity, digital communication and print design.</p></div>
+<div class="work-grid">
+<article class="work-card"><div class="work-visual"><div class="visual-logo">HMA</div></div><div class="work-info"><div class="work-tag">01 · Brand Identity</div><h3>Recognisable by design.</h3></div></article>
+<article class="work-card"><div class="work-visual"><div class="visual-social">Create<br>with intent.</div></div><div class="work-info"><div class="work-tag">02 · Digital Design</div><h3>Made to connect.</h3></div></article>
+<article class="work-card"><div class="work-visual"><div class="visual-print">YOUR<br>BRAND</div></div><div class="work-info"><div class="work-tag">03 · Print &amp; Marketing</div><h3>Details matter.</h3></div></article>
+</div><p class="work-note">This is a visual capabilities showcase, not a collection of claimed client projects. Approved portfolio samples can be added here.</p>
+</div></section>
+<section id="process"><div class="container"><div class="section-title"><div class="kicker">How We Work</div><h2>A clear process.<br><span class="gold">A better result.</span></h2><p>Every project starts with understanding your goals and ends with carefully prepared creative files.</p></div>
+<div class="process-grid">
+<div class="process-step"><b>01</b><h3>Discover</h3><p>We understand your business, audience, goals and design requirements.</p></div>
+<div class="process-step"><b>02</b><h3>Plan</h3><p>We shape the creative direction, visual approach and project scope.</p></div>
+<div class="process-step"><b>03</b><h3>Create</h3><p>We develop the design and refine the details with your feedback.</p></div>
+<div class="process-step"><b>04</b><h3>Deliver</h3><p>You receive the final approved design files in the agreed formats.</p></div>
+</div></div></section>
+<section class="contact" id="contact"><div class="container">
+<div class="section-title"><div class="kicker">Let's Work Together</div><h2>Your next big idea<br>deserves <span class="gold">great design.</span></h2><p>Have a project in mind? Connect with HMA DESIGNS and let's discuss how to bring your vision to life.</p></div>
+<div class="contact-actions"><a class="btn btn-fill" href="https://www.linkedin.com/in/hafiz-muhammad-afaq-400a34414/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a><a class="btn btn-outline" href="https://github.com/hafizsaab-kaka125hung" target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a></div>
+<div class="contact-small">Lahore, Pakistan · HMA DESIGNS · Your Premium Design Partner</div>
+</div></section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year"></span> <span class="footer-brand">HMA DESIGNS</span>. All rights reserved.</span><span>Where Luxury Meets Creativity.</span></div></footer>
+<script>
+const toggle=document.getElementById('menuToggle'),links=document.getElementById('navLinks');
+toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');toggle.textContent=open?'×':'☰';document.body.classList.toggle('menu-open',open)});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation menu');toggle.textContent='☰';document.body.classList.remove('menu-open')}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
